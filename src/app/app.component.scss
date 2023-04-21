@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;   
+    width: 80%;
 }
 
 .left-column {
@@ -31,11 +32,6 @@
     border: 1px solid black;
 }
 
-.about-me {
-    background-color: rgb(255, 125, 60);
-    padding: 10rem 17rem;
-    border: 1px solid black;
-}
 
 .experience {
     background-color: rgb(255, 125, 60);

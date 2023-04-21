@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-headerzss',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-about-me',
+  templateUrl: './about-me.component.html',
+  styleUrls: ['./about-me.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class AboutMeComponent implements OnInit {
   yearNow: number = 0;
   
   ngOnInit(): void {

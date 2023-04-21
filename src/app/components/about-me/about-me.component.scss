@@ -1,0 +1,29 @@
+div.header-container {
+    display: flex;
+}
+
+// div.header-container * {
+//     border: 1px solid red;
+// }
+
+div.dot {
+    height: 225px;
+    width: 225px;
+    background-color: #140636;
+    border-radius: 50%;
+}
+
+.my-designation{
+    font-size: medium;
+    margin:0 0 0 0.25cm;
+}
+
+h1{
+    margin:0;
+    font-size: xxx-large;
+    font-family: Parisienne;
+}
+
+p{
+    margin-left: 0.25cm;
+}

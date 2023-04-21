@@ -1,4 +1,16 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+
+
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Muli', sans-serif;
+    padding-top: 1em;
+
+}
+
+app-root {
+    display: flex;
+    justify-content: center;     
 }
