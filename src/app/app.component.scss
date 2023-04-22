@@ -1,11 +1,15 @@
 .container {
     display: flex;
     justify-content: center;   
-    width: 80%;
+    width: 70%;
 }
 
 .left-column {
        margin-right: 0.5cm;
+}
+
+.right-column{
+    width: 80%;
 }
 
 .personal-info {
@@ -32,15 +36,9 @@
     border: 1px solid black;
 }
 
-
-.experience {
-    background-color: rgb(255, 125, 60);
-    padding: 40rem 17rem;
-    border: 1px solid black;
-}
-
 .education {
     background-color: rgb(255, 125, 60);
     padding: 10rem 7rem;
     border: 1px solid black;
 }
+
