@@ -20,7 +20,7 @@ export class Experience {
         let whenToShowMonths = excessMonthsFromYear != 0 && (monthsOfWorking > 1 || excessMonthsFromYear > 1);
         let whenToShowMonth = excessMonthsFromYear != 0 && (monthsOfWorking == 1 || excessMonthsFromYear == 1);
 
-        let whenToShowYear = monthsOfWorking == 12 || (monthsOfWorking > 12 && excessMonthsFromYear > 0);
+        let whenToShowYear = monthsOfWorking == 12 || (monthsOfWorking > 12 && excessMonthsFromYear == 0);
         let whenToShowYears = monthsOfWorking > 12;
 
         let result = '';
