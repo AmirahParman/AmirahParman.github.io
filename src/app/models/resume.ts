@@ -35,7 +35,7 @@ export class Experience {
             return yearsOfWorking + ' year ' + monthsOfWorkingModulo + ' month'
         }
         //for 1year with months
-        if (monthsOfWorking == 13 && monthsOfWorking % 12 >= 1) {
+        if (monthsOfWorking == 13 && monthsOfWorking % 12 > 1) {
             let yearsOfWorking = Math.round(monthsOfWorking / 12);
             let monthsOfWorkingModulo = Math.round(monthsOfWorking % 12);
             return yearsOfWorking + ' year ' + monthsOfWorkingModulo + ' months'
