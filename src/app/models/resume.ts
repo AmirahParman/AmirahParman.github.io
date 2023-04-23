@@ -13,17 +13,53 @@ export class Experience {
         this.responsibilities = responsibilities;
     }
 
-    //include month's method
-    calculatedYears(): string {
-        var diff = (this.toDate.getTime() - this.fromDate.getTime()) / 1000;
-        diff /= (60 * 60 * 24);
-        let yearsOfWorking = Math.abs(Math.round(diff / 365.25));
+    calculatedYears(): any {
+        let monthsOfWorking = this.toDate.getMonth() - this.fromDate.getMonth() + (12 * (this.toDate.getFullYear() - this.fromDate.getFullYear()));
 
-        if (yearsOfWorking > 1) {
-            return yearsOfWorking + ' years';
+        //for 1 month
+        if (monthsOfWorking == 1) {
+            return monthsOfWorking + ' month';
         }
-        else
-            return yearsOfWorking + ' year';
+        // for months
+        if (monthsOfWorking > 1 && monthsOfWorking <= 11) {
+            return monthsOfWorking + ' months';
+        }
+        //for 1 year
+        if (monthsOfWorking == 12) {
+            return Math.round(monthsOfWorking / 12) + ' year';
+        }
+        //for 1year with 1 month
+        if (monthsOfWorking == 13 && monthsOfWorking % 12 == 1) {
+            let yearsOfWorking = Math.round(monthsOfWorking / 12);
+            let monthsOfWorkingModulo = Math.round(monthsOfWorking % 12);
+            return yearsOfWorking + ' year ' + monthsOfWorkingModulo + ' month'
+        }
+        //for 1year with months
+        if (monthsOfWorking == 13 && monthsOfWorking % 12 >= 1) {
+            let yearsOfWorking = Math.round(monthsOfWorking / 12);
+            let monthsOfWorkingModulo = Math.round(monthsOfWorking % 12);
+            return yearsOfWorking + ' year ' + monthsOfWorkingModulo + ' months'
+        }
+        //for years with no months
+        if (monthsOfWorking > 12 && monthsOfWorking % 12 == 0) {
+            let yearsOfWorking = Math.round(monthsOfWorking / 12);
+            return yearsOfWorking + ' years '
+        }
+        // for years & 1 month
+        if (monthsOfWorking > 12 && monthsOfWorking % 12 == 1) {
+            let yearsOfWorking = Math.round(monthsOfWorking / 12);
+            let monthsOfWorkingModulo = Math.round(monthsOfWorking % 12);
+            return yearsOfWorking + ' years ' + monthsOfWorkingModulo + ' month'
+        }
+        // for years & months
+        if (monthsOfWorking >= 13 && monthsOfWorking % 12 >= 1) {
+            let yearsOfWorking = Math.round(monthsOfWorking / 12);
+            let monthsOfWorkingModulo = Math.round(monthsOfWorking % 12);
+            return yearsOfWorking + ' years ' + monthsOfWorkingModulo + ' months'
+        }
+
     }
 }
+
+
 
