@@ -4,6 +4,8 @@
         <div class="year-of-working">
             <p class="leftColumn">{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
             <span class="total-working-duration">{{data.calculatedYears()}} </span>
+           <div class="label-industry-container"><span *ngFor="let industryLabel of data.industryLabels" class="label-industry">{{industryLabel}}</span>
+           </div>
         </div>
         <div class="right-column">
             <h3>{{data.positionHeld}}</h3>
