@@ -6,18 +6,29 @@
     <div class="education-details-container">
         <span>{{data.uniName}}</span>
         <span>{{data.cgpa}}</span>
-        <ul>
-            <li *ngFor="let achievement of data.achievements">
-                {{achievement}}
-            </li>
-        </ul>
-        <ul>
-            <li *ngFor="let volunteerWork of data.volunteerWorks">
-                {{volunteerWork}}
-            </li>
-        </ul>
-        <ul>
-            <li *ngFor="let subject of data.subjects">
-                {{subject}}
-            </li>
+        <div *ngIf="data.achievements.length > 0">
+            <p>Achievements</p>
             <ul>
+                <li *ngFor="let achievement of data.achievements">
+                    {{achievement}}
+                </li>
+            </ul>
+        </div>
+        <div *ngIf="data.volunteerWorks.length >0">
+            <p>volunteer Work</p>
+            <ul>
+                <li *ngFor="let volunteerWork of data.volunteerWorks">
+                    {{volunteerWork}}
+                </li>
+            </ul>
+        </div>
+        <div *ngIf="data.subjects.length > 0">
+            <p>subjects</p>
+            <ul>
+                <li *ngFor="let subject of data.subjects">
+                    {{subject}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

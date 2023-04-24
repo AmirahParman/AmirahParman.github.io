@@ -16,5 +16,4 @@ export class Education {
         this.volunteerWorks = volunteerWorks;
         this.subjects = subjects;
     }
-
 }
