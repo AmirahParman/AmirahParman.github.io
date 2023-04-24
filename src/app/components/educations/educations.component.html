@@ -3,27 +3,31 @@
     <div class="date-container">
         <p>{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
     </div>
+
     <div class="education-details-container">
-        <span>{{data.uniName}}</span>
-        <span>{{data.cgpa}}</span>
+        <h3 class="uni-name">{{data.uniName}}</h3>
+        <h4>{{data.nameOfCourse}}</h4>
+        <span>CGPA: {{data.cgpa}}</span>
         <div *ngIf="data.achievements.length > 0">
-            <p>Achievements</p>
+            <p class="sub-title">Achievements</p>
             <ul>
                 <li *ngFor="let achievement of data.achievements">
                     {{achievement}}
                 </li>
             </ul>
         </div>
+
         <div *ngIf="data.volunteerWorks.length >0">
-            <p>volunteer Work</p>
+            <p class="sub-title">Volunteer Work</p>
             <ul>
                 <li *ngFor="let volunteerWork of data.volunteerWorks">
                     {{volunteerWork}}
                 </li>
             </ul>
         </div>
+
         <div *ngIf="data.subjects.length > 0">
-            <p>subjects</p>
+            <p class="sub-title">Subjects</p>
             <ul>
                 <li *ngFor="let subject of data.subjects">
                     {{subject}}

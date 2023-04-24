@@ -10,11 +10,10 @@ export class EducationsComponent implements OnInit {
   datas: Education[] = [];
 
   ngOnInit(): void {
-        this.datas=[
-      new Education('2020-01-01', '2021-01-01','UiTM', 3.8, ['achievement 1', '2', '3'], ['volunteer 1', '2', '3'], []),
-      new Education('2020-01-01', '2021-01-01','UiTM', 3.8,[], [], ['EPC','subject2','subject 3']),
+    this.datas = [
+      new Education('2020-01-01', '2021-01-01', 'Lorem Ipsum','English for Professional Communication', 3.8, ['Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'], ['Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'], []),
+      new Education('2020-01-01', '2021-01-01', 'Lorem Ipsum', 'Teaching English as a Second Language', 3.8, [], [], ['Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.']),
     ]
 
   }
 }
- 
