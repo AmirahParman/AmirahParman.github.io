@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Experience } from 'src/app/models/resume';
+import { Experience } from 'src/app/models/experience';
 
 @Component({
   selector: 'app-experiences',
@@ -19,3 +19,4 @@ export class ExperiencesComponent implements OnInit {
     ]
   }
 }
+ 

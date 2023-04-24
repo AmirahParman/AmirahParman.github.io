@@ -1,0 +1,15 @@
+.container-education {
+    display: flex;
+    border: 3px solid;
+}
+
+.date-container {
+    border: 3px dotted red;
+}
+
+.education-details-container {
+    border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+
+}

@@ -1,0 +1,23 @@
+<h2>Education</h2>
+<div class="container-education" *ngFor="let data of datas">
+    <div class="date-container">
+        <p>{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
+    </div>
+    <div class="education-details-container">
+        <span>{{data.uniName}}</span>
+        <span>{{data.cgpa}}</span>
+        <ul>
+            <li *ngFor="let achievement of data.achievements">
+                {{achievement}}
+            </li>
+        </ul>
+        <ul>
+            <li *ngFor="let volunteerWork of data.volunteerWorks">
+                {{volunteerWork}}
+            </li>
+        </ul>
+        <ul>
+            <li *ngFor="let subject of data.subjects">
+                {{subject}}
+            </li>
+            <ul>

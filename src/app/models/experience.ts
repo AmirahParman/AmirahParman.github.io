@@ -15,7 +15,6 @@ export class Experience {
         this.industryLabels = industryLabels;
     }
 
-
     calculatedYears(): any {
         let monthsOfWorking = this.toDate.getMonth() - this.fromDate.getMonth() + (12 * (this.toDate.getFullYear() - this.fromDate.getFullYear()));
         let excessMonthsFromYear = monthsOfWorking % 12;
@@ -56,6 +55,3 @@ export class Experience {
         return result;
     }
 }
-
-
-
