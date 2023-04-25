@@ -1,8 +1,9 @@
 <h2 class="container">Personal Information</h2>
 <div class="information-container">
     <p>🌍 {{data.location}}</p>
-    📳 <a [href]="'tel:' + data.phoneNumber">{{data.phoneNumber}}</a>
-    📧<a [href]="'mailto:' + data.emailAddress +'?subject=Hi Amirah, lets connect!'">{{data.emailAddress}}</a>
+    <p>📳 <a [href]="'tel:' + data.phoneNumber">{{data.phoneNumber}}</a></p>
+    <p>📧<a [href]="'mailto:' + data.emailAddress +'?subject=Hi Amirah, lets connect!'">{{data.emailAddress}}</a>
+    </p>
     <P>🎂 {{data.birthDate | date: 'yyyy-MM-dd'}}</P>
     <p>✅ {{data.workPermitToShow()}} </p>
 </div>
