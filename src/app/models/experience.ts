@@ -7,8 +7,8 @@ export class Experience {
     industryLabels: string[];
 
     constructor(fromDate: string, toDate: string, positionHeld: string, company: string, responsibilities: string[], industryLabels: string[]) {
-        this.fromDate = new Date(fromDate);;
-        this.toDate = new Date(toDate);;
+        this.fromDate = new Date(fromDate);
+        this.toDate = new Date(toDate);
         this.positionHeld = positionHeld;
         this.company = company;
         this.responsibilities = responsibilities;
