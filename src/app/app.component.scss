@@ -1,37 +1,35 @@
 .container {
+    width: 90%;
+}
+
+.header {
     display: flex;
-    justify-content: center;   
-    width: 70%;
-
 }
 
-.right-column{
-    width: 80%;
-    margin-right: 1rem;
-    div{
-        padding: 2rem;
-        background-color: white;
-        margin-bottom: 1rem;
-        border-radius: 7px;
-    }
-}
-
-.left-column{
-    div:not(:first-child){ 
-        padding: 2rem 1px 2rem 2rem;
-        background-color: white;
-        margin-bottom: 1rem;
-    }
+.about-me{
+    width: 55%;
 }
 
 .navigation{
+    width: 30%;
+    padding-left: 4rem;
 }
 
-.left-column-content{
-    background-color: pink;
-}
-
-.about-me{ 
+.personal-info{
+   margin-top: 0;
 }
 
 
+.content-of-resume-container{
+    display: flex;
+}
+
+.right-colum{
+    width: 100%;
+    padding-right: 1.5px;
+
+}
+
+.experience{
+    width:60%;
+}
