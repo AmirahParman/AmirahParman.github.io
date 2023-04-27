@@ -17,7 +17,14 @@ div.sticky-navigator {
     position: sticky;
     top: 9px;
     width: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    a{
+        text-decoration: none;
+    }
 }
+
 
 .header {
     display: flex;
