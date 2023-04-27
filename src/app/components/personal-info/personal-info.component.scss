@@ -1,10 +1,9 @@
-.container{
-    display: flex;
-    margin-bottom: 0rem;
-}
-
-.information-container{
-    padding: 0.5rem;
-    width: max-content;
-    padding-left: 1rem;
+.information-container {
+    margin-top: 3px;
+    font-size: smaller;
+    span { margin-right: 10px;
+    }
+    span.divider{
+        opacity: 25%;
+    }
 }
