@@ -1,6 +1,22 @@
-.container {
+div.container {
     display: flex;
-    width: 98%;
+    width: 80%;
+
+    div.content-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 4;
+    }
+
+    div.navigation-container {
+        flex-grow: 3;
+        padding:1rem;
+    }
+}
+
+div.sticky-navigator {
+    position: sticky;
+    top: 9px;
 }
 
 .header {
@@ -11,15 +27,9 @@
     margin-bottom: 5px;
 }
 
-.navigation {
-    padding-left: 1rem;
-    width: 70%;
-}
-
 .personal-info {
     margin-top: 0;
 }
-
 
 .content-of-resume-container {
     display: flex;
@@ -34,10 +44,9 @@
 
 .right-column {
     padding-right: 1.5px;
-    flex-grow: 0.4;
-    width: 40%;
+    flex-grow: 0.5;
 }
 
-.separating-navigation {
-    padding: 4em 0em 0em 2em;
+.button-back-to-top {
+    border: 3px solid yellow;
 }
