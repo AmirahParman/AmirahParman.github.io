@@ -6,9 +6,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     font-family: 'Muli', sans-serif;
-    padding-top: 1em;
-    background-color:#efefef
-
+    background-color:#efefef;
+    width: 100%;
 }
 
 app-root {
@@ -16,6 +15,6 @@ app-root {
     justify-content: center;     
 }
 
-h2.section-title {
-    margin-bottom: 0;
+h1, h2 {
+    color: #152D51;
 }

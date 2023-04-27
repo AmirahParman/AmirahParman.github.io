@@ -1,43 +1,47 @@
 <div class="container">
-
-    <div class="header">
-        <div class="about-me">
-            <app-about-me></app-about-me>
+    <div class="separating-navigation">
+        <div class="header">
+            <div class="about-me">
+                <app-about-me></app-about-me>
+            </div>
         </div>
 
-        <div class="navigation">
-            <p>This is for section navigation</p>
-            <p>Go to About me</p>
-            <p>Go to experience</p>
-            <p>Go to education</p>
-            <p>Go to Skills & Proficiency</p>
-            <p>Go to certifications</p>
-            <p>Go to Referrals</p>
+        <div class="content-of-resume-container">
+            <div class="left-column">
+                <div class="experience">
+                    <app-experiences></app-experiences>
+                </div>
+                <div class="education">
+                    <app-educations></app-educations>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="personal-info">
+                    <app-personal-info></app-personal-info>
+                </div>
+
+                <div class="skills">
+                    <app-skills></app-skills>
+                </div>
+                <div class="certifications">
+                    <app-certifications></app-certifications>
+                </div>
+                <div class="referrals">
+                    <app-referrals></app-referrals>
+                </div>
+            </div>
         </div>
+
     </div>
 
-    <div class="content-of-resume-container">
-        <div class="experience">
-            <app-experiences></app-experiences>
-        </div>
-
-        <div class="right column">
-            <div class="personal-info">
-                <app-personal-info></app-personal-info>
-            </div>
-
-            <div class="skills">
-                <app-skills></app-skills>
-            </div>
-            <div class="certifications">
-                <app-certifications></app-certifications>
-            </div>
-            <div class="referrals">
-                <app-referrals></app-referrals>
-            </div>
-        </div>
-    </div>
-    <div class="education">
-        <app-educations></app-educations>
+    <div class="navigation">
+        <p>This is for section navigation</p>
+        <p>Go to About me</p>
+        <p>Go to experience</p>
+        <p>Go to education</p>
+        <p>Go to Skills & Proficiency</p>
+        <p>Go to certifications</p>
+        <p>Go to Referrals</p>
     </div>
 </div>
