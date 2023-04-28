@@ -1,9 +1,9 @@
 <div class="information-container">
-    <span>🌍 {{data.location}}</span>  <span class="divider">|</span>
-    <span>📳 <a [href]="'tel:' + data.phoneNumber">{{data.phoneNumber}}</a></span>
+    <span><i class='bx bxs-been-here' style='color:#083D77' ></i>{{data.location}}</span><span class="divider">|</span>
+    <span><i class='bx bx-mobile' style='color:#083D77' ></i> <a [href]="'tel:' + data.phoneNumber">{{data.phoneNumber}}</a></span>
     <span class="divider">|</span>
-    <span>📧 <a [href]="'mailto:' + data.emailAddress +'?subject=Hi Amirah, lets connect!'">{{data.emailAddress}}</a>
+    <span><i class='bx bxs-envelope' style='color:#083D77' ></i><a [href]="'mailto:' + data.emailAddress +'?subject=Hi Amirah, lets connect!'">{{data.emailAddress}}</a>
     </span>  <span class="divider">|</span>
-    <span>🎂 {{data.birthDate | date: 'yyyy-MM-dd'}}</span>  <span class="divider">|</span>
-    <span>✅ {{data.workPermitToShow()}} </span>
+    <span><i class='bx bxs-cake' style='color:#083D77' ></i> {{data.birthDate | date: 'yyyy-MM-dd'}}</span>  <span class="divider">|</span>
+    <span><i class='bx bxs-comment-check' style='color:#083D77' ></i> {{data.workPermitToShow()}} </span>
 </div>
