@@ -11,6 +11,6 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit(): void {
     this.data =
-      new skills(["Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text", "Lorem Ipsum is simply dummy text"])
+      new skills(['Soft Skills', 'Training Delivery','Microsoft Offices','BPO Learning Management', 'Learning Management System', 'Coaching','Event Planning', 'Program Management', 'Customer Service', 'Workshop', 'Data Analysis', 'Microsoft Offices', 'Exam Questions', 'Customer & Staff Relations', 'Teaching', 'Research & Analysis', 'Project Management', 'Process Improvements', 'Consulting', 'Onboarding'  ])
   }
 }

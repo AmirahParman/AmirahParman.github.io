@@ -1,5 +1,28 @@
-.container {
+.experiences-container {
     display: flex;
+}
+
+@media only screen and (width < 600px) {
+    div.container {
+        width: 100%;
+    }
+    
+    .experiences-container {
+        display: block;
+
+        .elaboration-of-experience-column {
+            padding: 0;
+        }
+
+        .label-industry-container {
+            display: block;
+
+            .label-industry {
+                margin:4px;
+                padding:4px;
+            }
+        }
+    }
 }
 
 .section-title{

@@ -11,7 +11,7 @@ export class ReferralsComponent implements OnInit {
 
   ngOnInit(): void {
     this.datas = [
-      new Referral ('This Person', 'Manager', 'Lazada MY', '0147231860'),
-      new Referral ('This Person', 'Manager', 'Lazada MY', '0147231860')
+      new Referral ('Mastura', 'Manager', 'Ecart services Malaysia Sdn Bhd (Lazada Malaysia)', '+6019-2197913'),
+      new Referral ('Inayat Zeb (Ezee)', 'Assistant Manager, L&D', 'TDCX Malaysia', '+6013-6677499')
     ]}
 }

@@ -15,7 +15,7 @@ export class PersonalInfo {
 
     workPermitToShow(): string {
         if (this.workPermit) {
-            return "with work permit";
+            return "has work permit";
         }
         return '';
     }
