@@ -1,49 +1,7 @@
-div.resume-container {
-    display: flex;
-    width: 90%;
-
-    div.content-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.5em;
-    }
-
-    div.navigation-container {
-        padding: 1rem;
-        margin-top: 1.5em;
-    }
-}
-
-div.sticky-navigator {
-    position: sticky;
-    top: 9px;
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    a{
-        text-decoration: none;
-    }
-}
-
-
-.header {
-    display: flex;
-    border-radius: 6px;
-    background-color: white;
-    padding: 2em;
-    margin-bottom: 15px;
-}
-
 .personal-info {
     margin-top: 0;
 }
 
-.content-of-resume-container {
-    border-radius: 6px;
-    background-color: white;
-    padding: 2em;
-}
 
 .left-column {
     flex-grow: 1;

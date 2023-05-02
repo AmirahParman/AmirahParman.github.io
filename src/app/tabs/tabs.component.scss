@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    .tabs-title {
+        margin: 7px;
+        width: max-content;
+ 
+    }
+}

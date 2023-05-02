@@ -15,7 +15,58 @@ app-root {
     justify-content: center;     
 }
 
+//pages
 h1, h2 {
     color: #343a40;
 }
 
+h2.section-title{
+    padding:3px 0px 1px 5px;
+}
+
+
+a{
+    text-decoration: none;
+   
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    border-radius: 6px;
+    background-color: white;
+    padding: 2em;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+
+div.sticky-navigator {
+    position: sticky;
+    top: 9px;
+    width: max-content;
+    min-width: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+div.navigation-container {
+    padding-left:  1rem;
+
+
+}
+
+div.container {
+    display: flex;
+    width: 90%;
+
+    div.content-container {
+        border-radius: 6px;
+        background-color: white;
+        padding: 2em;
+    }
+}
