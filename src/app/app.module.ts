@@ -3,13 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ExperiencesComponent } from './components/experiences/experiences.component';
-import { EducationsComponent } from './components/educations/educations.component';
-import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { CertificationsComponent } from './components/certifications/certifications.component';
-import { ReferralsComponent } from './components/referrals/referrals.component';
+import { AboutMeComponent } from './components/resume.components/about-me/about-me.component';
+import { ExperiencesComponent } from './components/resume.components/experiences/experiences.component';
+import { EducationsComponent } from './components/resume.components/educations/educations.component';
+import { PersonalInfoComponent } from './components/resume.components/personal-info/personal-info.component';
+import { SkillsComponent } from './components/resume.components/skills/skills.component';
+import { CertificationsComponent } from './components/resume.components/certifications/certifications.component';
+import { ReferralsComponent } from './components/resume.components/referrals/referrals.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { JobExperienceDescriptionComponent } from './tabs/job-experience-description/job-experience-description.component';
+import { ResumeComponent } from './tabs/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { ReferralsComponent } from './components/referrals/referrals.component';
     SkillsComponent,
     CertificationsComponent,
     ReferralsComponent,
+    TabsComponent,
+    JobExperienceDescriptionComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
