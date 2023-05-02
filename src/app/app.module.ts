@@ -13,6 +13,7 @@ import { ReferralsComponent } from './components/resume.components/referrals/ref
 import { TabsComponent } from './tabs/tabs.component';
 import { JobExperienceDescriptionComponent } from './tabs/job-experience-description/job-experience-description.component';
 import { ResumeComponent } from './tabs/resume/resume.component';
+import { JobDescriptionsComponent } from './components/job-descriptions/job-descriptions.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ResumeComponent } from './tabs/resume/resume.component';
     TabsComponent,
     JobExperienceDescriptionComponent,
     ResumeComponent,
+    JobDescriptionsComponent,
   ],
   imports: [
     BrowserModule,

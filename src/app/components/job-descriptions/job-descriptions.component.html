@@ -1,0 +1,8 @@
+<div class="jd-container">
+    <div class="jd-content-container" *ngFor="let data of datas">
+           <div><p>{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
+        <div>{{data.company}}</div>
+        <div>{{data.description}}</div></div>
+        <div class="systems-input-container">{{data.systems}}</div>
+    </div>
+</div>
