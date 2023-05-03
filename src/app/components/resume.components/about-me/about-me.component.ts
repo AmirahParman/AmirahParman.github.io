@@ -11,4 +11,9 @@ export class AboutMeComponent implements OnInit {
   ngOnInit(): void {
     this.yearNow = new Date().getFullYear();
   }
+
+  print(): void{
+    window.print();
+  }
 }
+
