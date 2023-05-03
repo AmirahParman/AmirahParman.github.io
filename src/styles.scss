@@ -103,3 +103,12 @@ div.container {
     }
 
 }
+@media only screen and (width < 600px) {
+    div.container {
+        width: 100%;
+    }
+
+    div.navigation-container {
+        display: none;
+    }
+}

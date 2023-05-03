@@ -34,3 +34,8 @@ ul {
         font-style: italic;
     }
 }
+@media only screen and (width < 600px) {
+    ul{
+        margin: 1px;
+    }
+}
