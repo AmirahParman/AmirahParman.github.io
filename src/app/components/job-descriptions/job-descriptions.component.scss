@@ -1,16 +1,36 @@
 .jd-container {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
 
-.jd-content-container {
-display: flex;
-flex-direction: row;
-padding-bottom: 3em;
+.company {
+    font-weight: bold;
+    padding-bottom: 15px;
 }
 
-.systems-input-container {
-    margin-top: 3em;
-    padding: 2.5rem;
+ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+        background-color: #083D77;
+        color: white;
+        border-radius: 3px;
+        width: max-content;
+        padding: 5px;
+        margin: 5px;
+        min-width: 100px;
+        text-align: center;
+        font-size: small;
+    }
 }
 
+.years-container {
+    display: inline-flex;
+
+    p.years-of-experience {
+        margin-left: 10px;
+        font-style: italic;
+    }
+}
