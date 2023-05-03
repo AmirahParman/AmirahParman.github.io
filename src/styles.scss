@@ -6,31 +6,32 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     font-family: 'Muli', sans-serif;
-    background-color:#efefef;
+    background-color: #efefef;
     width: 100%;
 }
 
 app-root {
     display: flex;
-    justify-content: center;     
+    justify-content: center;
 }
 
 //pages
-h1, h2 {
+h1,
+h2 {
     color: #343a40;
 }
 
-h2.section-title{
-    padding:3px 0px 1px 5px;
+h2.section-title {
+    padding: 3px 0px 1px 5px;
 }
 
 
-a{
+a {
     text-decoration: none;
-   
+
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
@@ -55,7 +56,7 @@ div.sticky-navigator {
 }
 
 div.navigation-container {
-    padding-left:  1rem;
+    padding-left: 1rem;
 
 
 }
@@ -69,4 +70,36 @@ div.container {
         background-color: white;
         padding: 2em;
     }
+}
+
+.only-in-print {
+    display: none;
+}
+
+@media print {
+    div.container {
+        width: 100%;
+    }
+
+    .not-in-print {
+        display: none;
+    }
+
+    .only-in-print {
+        display: inline-block;
+    }
+
+    p,
+    span {
+        font-size: 14px;
+    }
+
+    div {
+        font-size: 13px;
+    }
+
+    .section-title-print {
+        font-size: 17px;
+    }
+
 }

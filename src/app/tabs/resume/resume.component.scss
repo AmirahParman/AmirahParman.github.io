@@ -20,12 +20,31 @@
     div.container {
         width: 100%;
     }
-    div.navigation-container{
+
+    div.navigation-container {
         display: none;
     }
 }
 
-hr{
+hr {
     border-color: #F3F5F6;
     opacity: 40%;
+}
+
+@media print {
+    div.content-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    div.header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation-container {
+        display: none;
+    }
+
+
 }

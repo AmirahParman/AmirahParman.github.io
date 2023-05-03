@@ -1,9 +1,31 @@
 .information-container {
     margin-top: 3px;
     font-size: smaller;
-    span { margin-right: 10px;
+
+    span {
+        margin-right: 10px;
     }
-    span.divider{
+
+    span.divider {
         opacity: 25%;
     }
+}
+
+@media print {
+    .information-container {
+        display: inline-block;
+        padding: 5px 15px;
+    }
+
+    span.to-print{
+        margin-top: 3px;
+        display: inline-block;
+        word-spacing: 3px;
+        font-size: 12px;
+    }
+
+    span.divider {
+        border: 3px;
+    }
+
 }

@@ -16,3 +16,11 @@ h1{
 p{
     margin-left: 0.25cm;
 }
+
+@media print {
+    div.header-container {
+margin-top: 1rem;
+}
+h1{
+font-size: 40px;}
+}

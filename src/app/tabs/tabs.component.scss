@@ -13,3 +13,9 @@
         width: max-content;
     }
 }
+
+@media print {
+    .tabs{
+        display: none;
+    }
+}
