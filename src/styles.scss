@@ -102,7 +102,13 @@ div.container {
         font-size: 17px;
     }
 
+    hr {
+        border-color: #F3F5F6;
+        opacity: 40%;
+    }
+
 }
+
 @media only screen and (width < 600px) {
     div.container {
         width: 100%;
