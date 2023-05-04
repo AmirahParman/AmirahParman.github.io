@@ -1,20 +1,25 @@
 <div>
     <h2 class="section-title-print" class="section-title" id="experience">Experience</h2>
+    <div class="experience-disclaimer-box">
+        <p>The following is a concise overview of my main responsibilities. For a detailed description of the job,
+            please click on the job title that will direct you to the Job Descriptions page.</p>
+    </div>
     <div class="experiences-container" *ngFor="let data of datas">
         <div class="year-of-working">
             <p class="date-experience-column">{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
             <span class="total-working-duration">{{data.calculatedYears()}} </span>
-           <div class="label-industry-container"><span *ngFor="let industryLabel of data.industryLabels" class="label-industry">{{industryLabel}}</span>
-           </div>
+            <div class="label-industry-container"><span *ngFor="let industryLabel of data.industryLabels"
+                    class="label-industry">{{industryLabel}}</span>
+            </div>
         </div>
         <div class="elaboration-of-experience-column">
-            <h3>{{data.positionHeld}}</h3>
+            <a routerLink="/job-experience" [fragment]="data.companyShortName"><h3>{{data.positionHeld}}</h3></a>
             <span>{{data.company}}</span>
             <ul>
                 <li *ngFor="let responsibility of data.responsibilities">
                     {{responsibility}}
                 </li>
             </ul>
-        </div> 
+        </div>
     </div>
 </div>

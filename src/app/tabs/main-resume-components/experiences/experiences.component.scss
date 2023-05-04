@@ -1,6 +1,14 @@
 .experiences-container {
     display: flex;
 }
+div.experience-disclaimer-box{
+    background-color: #f0f7fd;
+    border-color: #d0e3f0;
+    margin: 20px 0;
+    padding: 5px 30px 5px 15px;
+    border-left: 5px solid #d0e3f0;
+    font-size: 14px;
+}
 
 @media only screen and (width < 600px) {
     div.container {
