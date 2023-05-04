@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { JobExperienceDescriptionComponent } from './tabs/job-experience-description/job-experience-description.component';
-import { ResumeComponent } from './tabs/resume/resume.component';
+import { JobExperienceDescriptionComponent } from './tabs/job-description.components/job-experience-description.component';
+import { ResumeComponent } from './tabs/main-resume-components/resume.component';
 
 const routerOptions: ExtraOptions = {
   useHash: false,
