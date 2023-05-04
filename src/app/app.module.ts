@@ -13,6 +13,7 @@ import { PersonalInfoComponent } from './tabs/main-resume-components/personal-in
 import { SkillsComponent } from './tabs/main-resume-components/skills/skills.component';
 import { CertificationsComponent } from './tabs/main-resume-components/certifications/certifications.component';
 import { ReferralsComponent } from './tabs/main-resume-components/referrals/referrals.component';
+import { GalleryComponent } from './tabs/gallery.components/gallery.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ReferralsComponent } from './tabs/main-resume-components/referrals/refe
     JobExperienceDescriptionComponent,
     ResumeComponent,
     JobDescriptionsComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
