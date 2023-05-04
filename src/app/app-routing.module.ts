@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'resume', pathMatch: 'full' }
   , { path: 'job-experience', component: JobExperienceDescriptionComponent }
   , { path: 'resume', component: ResumeComponent }
-  , { path: 'gallery', component: GalleryComponent}
-]; 
+  , { path: 'gallery', component: GalleryComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, routerOptions)],

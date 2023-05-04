@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  yearNow: number = 0;
-  
   ngOnInit(): void {
-    this.yearNow = new Date().getFullYear();
   }
 
-  print(): void{
+  print(): void {
     window.print();
   }
 }

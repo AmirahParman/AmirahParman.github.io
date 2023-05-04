@@ -57,8 +57,6 @@ div.sticky-navigator {
 
 div.navigation-container {
     padding-left: 1rem;
-
-
 }
 
 div.container {
@@ -74,6 +72,10 @@ div.container {
 
 .only-in-print {
     display: none;
+}
+
+.main-container {
+    width: 90%;
 }
 
 @media print {
@@ -107,6 +109,9 @@ div.container {
         opacity: 40%;
     }
 
+    .main-container {
+        width: 100%;
+    }
 }
 
 @media only screen and (width < 600px) {
@@ -116,5 +121,9 @@ div.container {
 
     div.navigation-container {
         display: none;
+    }
+
+    div.main-container {
+        width: 95%;
     }
 }

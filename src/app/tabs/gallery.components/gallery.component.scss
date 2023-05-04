@@ -2,11 +2,12 @@
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
+
 }
 
 .image-slide {
     overflow: hidden;
+
     img {
         width: 100%;
         height: 100%;
@@ -15,7 +16,8 @@
         opacity: 0.6;
     }
 }
-.active-image img{
-opacity: 100%;
-border: 1px solid black;
+
+.active-image img {
+    opacity: 100%;
+    border: 1px solid black;
 }

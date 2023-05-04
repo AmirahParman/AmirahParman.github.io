@@ -7,7 +7,8 @@
 .tabs {
     display: flex;
     flex-direction: row;
-    margin: 0.7em 0em 3.5px 0em ;
+    margin: 0.7em 0em 3.5px 0em;
+
     .tabs-title {
         margin: 10px;
         width: max-content;
@@ -15,8 +16,7 @@
 }
 
 @media print {
-    .tabs{
+    .tabs {
         display: none;
     }
 }
-
