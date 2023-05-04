@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "deploy": "npx angular-cli-ghpages --dir=dist/amirah-parman.github.io",
+    "deploy": "ng build && npx angular-cli-ghpages --dir=dist/amirah-parman.github.io",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
