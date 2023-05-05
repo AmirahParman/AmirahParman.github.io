@@ -11,7 +11,7 @@ export class PersonalInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.data =
-      new PersonalInfo('Stockholm', '+4768563164', 'fthnamirah@hotmail.com', '1992-09-24', true)
+      new PersonalInfo('Stockholm', '+4768563164', 'fthnamirah@hotmail.com', 'https://www.linkedin.com/in/amirahparman/', true)
   }
 
 }

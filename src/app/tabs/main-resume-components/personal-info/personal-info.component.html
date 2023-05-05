@@ -1,23 +1,26 @@
 <div class="information-container">
     <span class="to-print"><i class='bx bx-fw bxs-been-here' style='color:#083D77'></i>{{data.location}}</span>
     <span class="to-print" class="divider">|</span>
+    <span class="to-print">
+        <i class='bx bx-fw bxs-comment-check' style='color:#59a17e'></i> {{data.workPermitToShow()}}
+    </span>
+    <span class="to-print" class="divider">|</span>
 
     <span class="to-print">
         <i class='bx bx-fw bx-mobile' style='color:#083D77'></i> <a
             [href]="'tel:' + data.phoneNumber">{{data.phoneNumber}}</a>
     </span>
     <span class="to-print" class="divider">|</span>
-
-    <span class="to-print">
-        <i class='bx bx-fw bxs-comment-check' style='color:#59a17e'></i> {{data.workPermitToShow()}}
-    </span>
+    
+    <span class="to-print"><i class='bx bx-fw bxs-envelope' style='color:#083D77'></i><a
+            [href]="'mailto:' + data.emailAddress +'?subject=Hi Amirah, lets connect!'">{{data.emailAddress}}</a>
+    </span> 
     <span class="to-print" class="divider">|</span>
 
     <span class="not-in-print">
         <i class='bx bx-fw bxl-github' style='color:#083d77'></i>
         <a href="https://github.com/AmirahParman">GitHub</a>
     </span>
-    <span class="divider not-in-print">|</span>
 
     <span class="to-print only-in-print">
         <i class='bx bx-fw bxl-github' style='color:#083d77'></i>
@@ -25,9 +28,13 @@
     </span>
     <span class="to-print" class="divider">|</span>
 
-    <span class="to-print"><i class='bx bx-fw bxs-envelope' style='color:#083D77'></i><a
-            [href]="'mailto:' + data.emailAddress +'?subject=Hi Amirah, lets connect!'">{{data.emailAddress}}</a>
-    </span> <span class="to-print" class="divider">|</span>
-    <span class="to-print"><i class='bx bx-fw bxs-cake' style='color:#083D77'></i> {{data.birthDate | date:
-        'yyyy-MM-dd'}}</span>
+
+    <span class="not-in-print">
+        <i class='bx bx-fw bxl-linkedin-square' style='color:#083d77'></i>
+        <a href="https://www.linkedin.com/in/amirahparman">LinkedIn</a>
+    </span>
+
+    <span class="to-print only-in-print">
+        <i class='bx bx-fw bxl-linkedin-square' style='color:#083d77'></i>
+        linkedin.com/in/amirahparman</span>
 </div>
