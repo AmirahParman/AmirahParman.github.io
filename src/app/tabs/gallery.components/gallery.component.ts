@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
+  displayedImage: string = "../../../assets/Gold Award Cert.jpg"
 
+  changeDisplayImage(newMainImage: string) {
+    this.displayedImage= newMainImage;
+  }
 }
