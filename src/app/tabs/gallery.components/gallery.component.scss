@@ -30,11 +30,17 @@
 
 .displayed-image {
     display: flex;
-	justify-content: center;
-    height:30%;
+    justify-content: center;
+    height: 600px;
     margin-bottom: 15px;
     width: 100%;
+    background-image: radial-gradient(#d9d9d9 20%, transparent 20%), radial-gradient(#cbb6b6 20%, transparent 20%);
+    background-color: #eae8e8;
+    background-position: 0 0, 50px 50px;
+    background-size: 10px 10px;
+
     img {
-        max-width: 40%;
+        overflow-y: hidden;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
 }
