@@ -11,29 +11,10 @@
         <div class="content-container">
             <div class="displayed-image"><img [src]="displayedImage" /></div>
             <div class="thumbnails-container">
-                <div class="image-slide active-image" (click)="changeDisplayImage('../../../assets/Gold Award Cert.jpg')">
-                    <img src="../../../assets/Gold Award Cert.jpg" alt="Gold-Certified">
-                </div>
-                <div class="image-slide" (click)="changeDisplayImage('../../../assets/Silver Award Cert.jpg')">
-                    <img src="../../../assets/Silver Award Cert.jpg" alt="Silver-Certified">
-                </div>
-                <div class="image-slide" (click)="changeDisplayImage('../../../assets/1633657993583.jfif')">
-                    <img src="../../../assets/1633657993583.jfif" alt="TDCX Emerging Champion Award">
-                </div>
-                <div class="image-slide" (click)="changeDisplayImage('../../../assets/1583731313968.jfif')">
-                    <img src="../../../assets/1583731313968.jfif" alt="Lazada Recognition Award">
-                </div>
-                <div class="image-slide" (click)="changeDisplayImage('../../../assets/IMG_3403.JPG')">
-                    <img src="../../../assets/IMG_3403.JPG" alt="LazLive Poster">
-                </div>
-                <div class="image-slide" (click)="changeDisplayImage('../../../assets/20211126_010626000_iOS.jpg')">
-                    <img src="../../../assets/20211126_010626000_iOS.jpg" alt="talkshow">
-                </div>
-                <div class="image-slide"(click)="changeDisplayImage('../../../assets/20220302_051631000_iOS.jpg')">
-                    <img src="../../../assets/20220302_051631000_iOS.jpg" alt="Emo-talk">
-                </div>
-                <div class="image-slide" (click)="changeDisplayImage('../../../assets/Volvo Launching.jpg')">
-                    <img src="../../../assets/Volvo Launching.jpg" alt="Volvo CRC Launching Event">
+                <div class="image-slide" *ngFor="let image of images"
+                    (click)="changeDisplayImage(image.imageSrc, image.id)"
+                    [ngClass]="{'active-image': image.id == activeImage}">
+                    <img [src]="image.imageSrc" [alt]="image.alt">
                 </div>
             </div>
         </div>

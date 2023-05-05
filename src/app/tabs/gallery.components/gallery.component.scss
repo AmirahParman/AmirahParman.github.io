@@ -23,18 +23,18 @@
     opacity: 100%;
 }
 
-.image-slide.active-image{
+.image-slide.active-image {
     border: 2px solid black;
 
 }
 
 .displayed-image {
-    align-content: center;
     display: flex;
-    justify-content: center;
+	justify-content: center;
+    height:30%;
     margin-bottom: 15px;
-    overflow: scroll;
+    width: 100%;
     img {
-        width: 60%;
+        max-width: 40%;
     }
 }
