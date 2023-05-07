@@ -14,6 +14,8 @@ import { SkillsComponent } from './tabs/main-resume-components/skills/skills.com
 import { CertificationsComponent } from './tabs/main-resume-components/certifications/certifications.component';
 import { ReferralsComponent } from './tabs/main-resume-components/referrals/referrals.component';
 import { GalleryComponent } from './tabs/gallery.components/gallery.component';
+import { ReadJsonFileService } from './services/read-json-file.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,12 @@ import { GalleryComponent } from './tabs/gallery.components/gallery.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ReadJsonFileService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

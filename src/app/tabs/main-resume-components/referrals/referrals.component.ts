@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Referral } from 'src/app/models/referral';
+import { ReadJsonFileService } from 'src/app/services/read-json-file.service';
 
 @Component({
   selector: 'app-referrals',
@@ -9,9 +10,16 @@ import { Referral } from 'src/app/models/referral';
 export class ReferralsComponent implements OnInit {
   datas: Referral[] = []
 
+  constructor(private readJsonFileService: ReadJsonFileService) {
+  }
+
   ngOnInit(): void {
-    this.datas = [
-      new Referral ('Mastura', 'Manager', 'Ecart services Malaysia Sdn Bhd (Lazada Malaysia)', '+6019-2197913'),
-      new Referral ('Inayat Zeb (Ezee)', 'Assistant Manager, L&D', 'TDCX Malaysia', '+6013-6677499')
-    ]}
+    this.getReferralsFromJsonFile();
+  }
+
+  getReferralsFromJsonFile(): void {
+    this.readJsonFileService.getReferrals().subscribe(referrals => {
+      this.datas = referrals;
+    });
+  }
 }

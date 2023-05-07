@@ -7,10 +7,10 @@ import { Certifications as Certification } from 'src/app/models/certification';
   styleUrls: ['./certifications.component.scss']
 })
 export class CertificationsComponent implements OnInit {
-  data: Certification[] = []
+  certifications: Certification[] = []
 
   ngOnInit(): void {
-    this.data = [
+    this.certifications = [
       new Certification('2021-12', ['Certified Gold Trainer (TDCX)']),
       new Certification('2021-06', ['TDCX Certified Silver Trainer']),
       new Certification('2019-11', ['Lean Six Sigma White Belt']),

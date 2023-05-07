@@ -1,9 +1,9 @@
 <h2 class="section-title-print">Certifications</h2>
-<div class="list-of-certification" *ngFor="let data of data">
-    <span class="date-certified" class="date-certified">{{data.dateCertified | date:'MMM y'}}</span>
+<div class="list-of-certification" *ngFor="let certification of certifications">
+    <span class="date-certified" class="date-certified">{{certification.dateCertified | date:'MMM y'}}</span>
     <div class="name-of-certifications">
         <ul>
-            <li *ngFor="let courseName of data.courseNames">{{courseName}}</li>
+            <li *ngFor="let courseName of certification.courseNames">{{courseName}}</li>
         </ul>
     </div>
 </div>
