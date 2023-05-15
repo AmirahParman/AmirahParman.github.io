@@ -1,7 +1,5 @@
 # My Online Resume
-This is my personal online resume built with Angular. It is still a work in progress.
-
-I am working by stages to include mutiple tabs into this resume to showcase other information and descriptions. 
+This is my personal online resume built with Angular. It is an ongoing work in progress.
 
 Visit: https://amirahparman.github.io/
 
