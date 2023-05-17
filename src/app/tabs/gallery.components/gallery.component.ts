@@ -10,6 +10,7 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
     this.images = [
       new GalleryThumbnail('cert-1', '../../../assets/Gold Award Cert.jpg', 'Gold Certified Trainer'),
+      new GalleryThumbnail('Cert-9', '../../../assets/Core Values Award.jpg', 'Core Value Award'),
       new GalleryThumbnail('cert-8', '../../../assets/Silver Award Cert.jpg', ''),
       new GalleryThumbnail('cert-7', '../../../assets/1633657993583.jfif', ''),
       new GalleryThumbnail('cert-6', '../../../assets/1583731313968.jfif', ''),
