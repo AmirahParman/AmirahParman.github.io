@@ -9,7 +9,9 @@ import { GalleryThumbnail } from 'src/app/models/gallery-thumbnail';
 export class GalleryComponent implements OnInit {
   ngOnInit(): void {
     this.images = [
+      new GalleryThumbnail('cert-11', '../../../assets/EMO Talk 50th Episode.jpg', 'Guest Speaker'),
       new GalleryThumbnail('cert-1', '../../../assets/Gold Award Cert.jpg', 'Gold Certified Trainer'),
+      new GalleryThumbnail('cert-10', '../../../assets/Svenska A2 Cert.jpg', ''),
       new GalleryThumbnail('Cert-9', '../../../assets/Core Values Award.jpg', 'Core Value Award'),
       new GalleryThumbnail('cert-8', '../../../assets/Silver Award Cert.jpg', ''),
       new GalleryThumbnail('cert-7', '../../../assets/1633657993583.jfif', ''),
@@ -22,8 +24,8 @@ export class GalleryComponent implements OnInit {
   }
 
   images: GalleryThumbnail[] = [];
-  displayedImage: string = "../../../assets/Gold Award Cert.jpg"
-  activeImage: string = 'cert-1';
+  displayedImage: string = "../../../assets/EMO Talk 50th Episode.jpg"
+  activeImage: string = 'cert-11';
 
   changeDisplayImage(srcOfImageBeingClicked: string, idOfImageBeingClicked: string) {
     this.displayedImage = srcOfImageBeingClicked;
