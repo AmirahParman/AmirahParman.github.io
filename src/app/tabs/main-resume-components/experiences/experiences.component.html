@@ -6,14 +6,18 @@
     </div>
     <div class="experiences-container" *ngFor="let data of datas">
         <div class="year-of-working">
-            <p class="date-experience-column">{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
+            <p class="date-experience-column">{{data.fromDate | date:'MMM y'}} - <span
+                    *ngIf="!data.isCurrent">{{data.toDate | date:'MMM y'}}</span> <span
+                    *ngIf="data.isCurrent">Current</span></p>
             <span class="total-working-duration">{{data.calculatedYears()}} </span>
             <div class="label-industry-container"><span *ngFor="let industryLabel of data.industryLabels"
                     class="label-industry">{{industryLabel}}</span>
             </div>
         </div>
         <div class="elaboration-of-experience-column">
-            <a routerLink="/job-experience" [fragment]="data.companyShortName"><h3>{{data.positionHeld}}</h3></a>
+            <a routerLink="/job-experience" [fragment]="data.companyShortName">
+                <h3>{{data.positionHeld}}</h3>
+            </a>
             <span>{{data.company}}</span>
             <ul>
                 <li *ngFor="let responsibility of data.responsibilities">

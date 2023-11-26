@@ -1,4 +1,5 @@
 export class Experience {
+    isCurrent: boolean;
     fromDate: Date;
     toDate: Date;
     positionHeld: string;
@@ -8,8 +9,9 @@ export class Experience {
     industryLabels: string[];
 
     constructor(fromDate: string, toDate: string, positionHeld: string, company: string, companyShortName: string, responsibilities: string[], industryLabels: string[]) {
+        this.isCurrent = toDate == '';
         this.fromDate = new Date(fromDate);
-        this.toDate = new Date(toDate);
+        this.toDate = toDate == '' ? new Date() : new Date(toDate);
         this.positionHeld = positionHeld;
         this.company = company;
         this.companyShortName = companyShortName;
