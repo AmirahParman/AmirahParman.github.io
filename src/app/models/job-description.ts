@@ -1,4 +1,5 @@
 export class jobDescription {
+    isCurrent: boolean;
     id: string;
     fromDate: Date;
     toDate: Date;
@@ -8,8 +9,9 @@ export class jobDescription {
 
     constructor(id: string, fromDate: string, toDate: string, company: string, description: string, systems: string[]) {
         this.id = id;
+        this.isCurrent = toDate == '';
         this.fromDate = new Date(fromDate);
-        this.toDate = new Date(toDate);
+        this.toDate = toDate == '' ? new Date() : new Date(toDate);
         this.company = company;
         this.description = description;
         this.systems = systems;

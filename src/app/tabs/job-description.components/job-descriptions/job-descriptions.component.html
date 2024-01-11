@@ -3,7 +3,8 @@
         <div>
             <h1 [id]="data.id"></h1>
             <div class="years-container">
-                <p>{{data.fromDate | date:'MMM y'}} - {{data.toDate | date:'MMM y'}}</p>
+                <p>{{data.fromDate | date:'MMM y'}} - <span *ngIf="!data.isCurrent">{{data.toDate | date:'MMM
+                        y'}}</span> <span *ngIf="data.isCurrent">Current</span></p>
                 <p class="years-of-experience">({{data.calculatedYears()}})</p>
             </div>
             <div class="company">{{data.company}}</div>
